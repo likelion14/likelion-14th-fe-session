@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+#profile{
+    
+    width: 300px;
+    height: 700px;
+    padding-top: 10px;
+    background-color: yellowgreen;
+    text-align: center;
+    position: static;
+
+}
+#border_img{
+    border-radius: 50%;
+}
+
+#text{
+    color : white;
+}
+#introduce{
+    margin-top: 10px;
+    margin-left: 30px;
+}
