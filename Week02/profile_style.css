@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  margin: 0px;
+}
+.left-section {
+  background-color: rgb(5, 5, 104);
+  width: 30%;
+  height: 100vh;
+  text-align: center;
+}
+.right-section {
+  margin-left: 30px;
+  width: 70%;
+}
+.image {
+  width: 50%;
+  margin-top: 100px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
