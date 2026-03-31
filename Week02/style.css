@@ -8,6 +8,7 @@ body {
 .container {
     display: flex; 
     min-height: 100vh;
+    
 }
 
 .sidebar {
@@ -57,5 +58,12 @@ ul {
 
 .skills-list {
     list-style: disc;
-    padding-left: 20px;
+    padding-left: 20 px;
 }
+
+/* Lion - https://www.cursors-4u.com/cursor/nat146 */
+* {
+  cursor: url('https://cdn.cursors-4u.net/previews/lion-b04bb36c-32.webp') 32 32, auto !important;
+}
+/* End www.Cursors-4U.com Code */
+
