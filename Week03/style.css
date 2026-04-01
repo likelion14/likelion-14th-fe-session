@@ -1,0 +1,192 @@
+
+
+body{
+    display: flex;
+    background-color: #ffdbdb;
+    align-items: center;
+    justify-content: center;
+    margin: 40px ;
+}
+
+.outbox{  
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 500px;           
+    max-height: 540;
+    background-color: #fff;
+    outline-color: #a5a5a5;
+    margin : 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 50px;
+    box-shadow:0 0 17px #664242;
+    
+
+}
+
+h1 {
+    text-align: center;
+    color: #994848;
+}
+
+.taskinput{
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffeeee;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+}
+
+
+
+#input-area {
+    flex: 1;
+    padding: 10px 17px;
+    outline: none;
+    border: none;
+    background: transparent;
+
+}
+
+
+#add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding : 15px 50px;
+    background: #b97474;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    border-radius: 35px;
+}
+
+#add svg {
+  width: 25px;
+  height: 25px;
+}
+
+#add:hover {
+  background: #784242;
+}
+
+
+.todolist{
+  display: flex;
+  background: #ffffff;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  padding: 0 20px;
+  margin-bottom: 25px;
+  height: 50px;
+  width: 400px ;
+
+}
+
+
+
+.checkbox input {
+  display: none;
+}
+
+
+.checkbox {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+
+.check-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #d5d5d5;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.check-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: white;
+  stroke-width: 2;
+  fill: none;
+
+  display: none;
+}
+
+/* hover */
+.checkbox:hover .check-icon {
+  background-color: #a5a5a5;
+}
+
+
+.checkbox input:checked + .check-icon {
+  background-color: #b97474;
+}
+
+.checkbox input:checked + .check-icon svg {
+  display: block;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn svg {
+    width: 20px;
+    height: 20px;
+    stroke: #9c9c9c;
+    
+    
+}
+
+.delete-btn:hover svg {
+    stroke: #3d3a3a;
+
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+
+#toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+
+  background: #333;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 14px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+
+#toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
