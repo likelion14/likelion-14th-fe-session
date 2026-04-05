@@ -1,0 +1,135 @@
+body {
+    justify-content: center;
+}
+
+.container{
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+    margin: 20px;
+    padding: 16px;
+    width: 90%;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 80%;
+    max-width: 90%;
+    color: #242424;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 4px rgb(0,0,0,30%);
+    padding: 12px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 1260px) {
+    .card-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card-container {
+        width: 100%;
+    }
+}
+
+.todo-list{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: fit-content;
+    background-color: white;
+    border-color: #242424;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+}
+
+#todoList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+li span {
+    flex: 1;
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+}
+
+li input {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+li button {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#todoList li.complete span{
+    text-decoration: line-through;
+    color: rgb(155, 155, 155);
+}
+
+#todoList li.complete button::after {
+    content: "";
+    display: block;
+}
+
+.delete-btn {
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+    text-align: center;
+}
+
+.add-btn {
+    padding: 8px;
+    margin: 20px 0px 20px 20px;
+}
+
+.input-area {
+    display: flex;
+    justify-content: space-between;  /* 텍스트는 왼쪽, 버튼은 오른쪽으로 정렬하기 */
+    background-color: white;
+    border-color: #242424;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.input-area .input{
+    flex: 1;
+    height: 20px;
+    font-size: 16px;
+    border-style: hidden;
+}
