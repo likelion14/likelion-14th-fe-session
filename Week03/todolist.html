@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3주차 과제 - todolist 만들기</title>
+  <link rel="stylesheet" href="todolist_style.css">
+</head>
+<body>
+  <div class="todo">
+    <h2 style="margin: 35px auto 40px auto;">✅ To-Do List</h2>
+    <form>
+      <div>
+        <input type="text" id="todo-add" name="todo-add">
+        <button id="add-button">추가하기</button>
+      </div>
+    </form>
+    <ul id="todo-list"></ul>
+  </div>
+  <template id="todo-tem">
+    <div class="todo-card">
+      <input type="checkbox" id="todo-check">
+      <span class="todo-text"></span>
+      <button id="del-button">삭제하기</button>
+    </div>
+  </template>
+  <script src="todolist.js"></script>
+</body>
+</html>

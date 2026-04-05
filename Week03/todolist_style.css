@@ -1,0 +1,48 @@
+body {
+  text-align: center;
+}
+#todo-list {
+  padding: 0;
+}
+.todo-card {
+  display: flex;
+  padding: 15px 20px 15px 20px;
+  margin: 0 auto 12px auto;
+  width: 30%;
+  border-radius: 10px;
+  border: 0.5px solid #f3f3f3;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+.todo-text {
+  flex-grow: 1; 
+  margin-left: 15px;
+  text-align: left;
+}
+#todo-add {
+  width: 28%;
+}
+#add-button, #del-button {
+  font-size: 11px;
+}
+@media screen and (max-width: 1260px) {
+  .todo-card {
+    width: 50%;
+  }
+  .todo-text {
+    margin-left: 5px;
+  }
+  #todo-add {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .todo-card {
+    width: 70%;
+  }
+  .todo-text {
+    margin-left: 5px;
+  }
+  #todo-add {
+    width: 60%;
+  }
+}
