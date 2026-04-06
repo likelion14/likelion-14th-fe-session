@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function showTask() {
-        listContainer.innerHTML = localStorage.getItem("data");
+        listContainer.textContent = localStorage.getItem("data");
     }
 
     showTask();
