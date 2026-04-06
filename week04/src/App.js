@@ -40,10 +40,9 @@ function App() {
   ]
   return (
     <div style={{
-      alignItems: 'center',
       textAlign: 'center',
       padding: '50px',
-      margin: '20px 0px',
+      margin: '20px auto',
       fontFamily: 'Pretendard, Noto Sans KR, roboto',
       maxWidth: '600px'
     }} >
