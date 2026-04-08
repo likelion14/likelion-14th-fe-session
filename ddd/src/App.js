@@ -2,9 +2,9 @@ import React from 'react';
 
 function App() {
   const routines = [
-    { id: 1, type: "아침", time: "11:00", task: "일어나서 학교 갈 준비 하기", desc: "기분 좋게 시작!", isLunch: false },
-    { id: 2, type: "점심", time: "15:00", task: "수업 끝!", desc: "빠르게 집에 가기!", isLunch: true },
-    { id: 3, type: "저녁", time: "20:00", task: "리액트 공부", desc: "멋사 과제 끝내기!", isLunch: false }
+    { id: 1, type: "아침", time: "11:00", task: "일어나서 학교 갈 준비 하기", desc: "기분 좋게 시작!" },
+    { id: 2, type: "점심", time: "15:00", task: "수업 끝!", desc: "빠르게 집에 가기!" },
+    { id: 3, type: "저녁", time: "20:00", task: "리액트 공부", desc: "멋사 과제 끝내기!" }
   ];
 
   return (
@@ -25,15 +25,14 @@ function App() {
           <h3 style={{ margin: '10px 0', color: '#FF8C00' }}>{item.task}</h3> 
           <p style={{ color: '#666' }}>{item.desc}</p>
 
-          {item.isLunch && (
-            <p style={{ color: '#3cb371', fontWeight: 'bold' }}>
-              ⭐ 빨리가서 밥 챙겨먹기!
-            </p>
+          {/* 한글 "점심"과 똑같은지 비교하는 방식 */}
+          {item.type === "점심" && (
+            <p style={{ color: "orange" }}>⭐ 점심은 꼭 챙겨 먹어요!</p>
           )}
         </div>
       ))}
 
-      {/* 2. 이벤트 처리: 버튼을 map() 함수 바깥, 맨 아래에 배치합니다. */}
+
       <button 
         onClick={() => alert("오늘 하루 루틴 모두 확인 완료! 화아팅!")}
         style={{
