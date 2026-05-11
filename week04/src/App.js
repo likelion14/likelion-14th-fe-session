@@ -1,5 +1,5 @@
 import './App.css';
-
+// 제출위한 수정
 function App() {
   const routines = [
   { time: "아침 | 08:00", content: "학교 갈 준비를 합니다", ex:'힘든 하루의 시작했습니다' },
