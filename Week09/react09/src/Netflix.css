@@ -1,0 +1,62 @@
+.netflix-bg {
+  background: radial-gradient(50% 50% at 50% 0%, rgba(100, 10, 10, 0.5) 0%, rgba(0, 0, 0, 1) 100%);
+  background-color: #000;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.netflix-input {
+  background-color: rgba(22, 22, 22, 0.8) !important;
+  border: 1px solid #555 !important;
+  color: white !important;
+  padding: 16px !important;
+  border-radius: 4px !important;
+  font-size: 16px !important;
+}
+
+.netflix-input:focus {
+  border-color: #fff !important;
+  box-shadow: none !important;
+  background-color: rgba(30, 30, 30, 0.8) !important;
+}
+
+.netflix-input::placeholder {
+  color: #8c8c8c !important;
+}
+
+.netflix-btn {
+  background-color: #E50914 !important;
+  color: white !important;
+  padding: 16px !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  border-radius: 4px !important;
+  border: none !important;
+}
+
+.netflix-btn:hover {
+  background-color: #c11119 !important;
+}
+
+.email-display-box {
+  background-color: #333;
+  border-radius: 4px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pin-input {
+  letter-spacing: 10px;
+  font-size: 20px !important;
+}
