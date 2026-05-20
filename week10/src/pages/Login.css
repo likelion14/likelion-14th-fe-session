@@ -1,0 +1,101 @@
+.login-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  background:
+    url('../assets/images/netflix_login_bg.png') center / cover no-repeat;
+}
+
+.login-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.login-logo {
+  position: absolute;
+  top: 28px;
+  left: max(24px, calc((100vw - 1200px) / 2));
+  z-index: 1;
+  background: transparent;
+  cursor: pointer;
+}
+
+.login-logo img {
+  display: block;
+  width: clamp(108px, 14vw, 160px);
+}
+
+.login-box {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 460px);
+  padding: 48px 40px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.78);
+  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.32);
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.login-subtitle {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.login-form {
+  margin-top: 28px;
+  display: grid;
+  gap: 16px;
+}
+
+.login-input {
+  min-height: 56px;
+  padding: 0 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 5px;
+  background: rgba(34, 34, 34, 0.9);
+  color: #fff;
+}
+
+.login-input::placeholder {
+  color: rgba(255, 255, 255, 0.48);
+}
+
+.login-button {
+  min-height: 56px;
+  margin-top: 8px;
+  border-radius: 5px;
+  background: #e50914;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #c11119;
+}
+
+.login-support {
+  margin-top: 20px;
+}
+
+.login-support button {
+  background: transparent;
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login-support p {
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

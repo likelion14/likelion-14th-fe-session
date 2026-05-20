@@ -1,0 +1,190 @@
+.home-page {
+  background: #000;
+}
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background-image: url('../assets/images/netflix_main_bgimg.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.3) 32%, rgba(0, 0, 0, 0.82) 100%),
+    radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.55) 70%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+  min-height: 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.netflixlogo img {
+  display: block;
+  width: clamp(96px, 15vw, 168px);
+}
+
+.netflixlogo {
+  background: transparent;
+  cursor: pointer;
+}
+
+.headerRightSide {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.languageSelect {
+  min-width: 124px;
+  padding: 9px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 5px;
+  background: rgba(15, 15, 15, 0.78);
+  color: #fff;
+}
+
+.languageSelect:focus,
+.hero-email-input:focus,
+.login-input:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.logInBtn,
+.hero-submit-button {
+  background: #e50914;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.logInBtn {
+  padding: 10px 18px;
+  border-radius: 5px;
+}
+
+.logInBtn:hover,
+.hero-submit-button:hover {
+  background: #c11119;
+  transform: translateY(-1px);
+}
+
+.hero-container {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+  min-height: calc(100vh - 92px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  text-align: center;
+}
+
+.hero-copy {
+  max-width: 800px;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.75rem, 7vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.hero-copy p {
+  margin-top: 18px;
+  font-size: clamp(1.125rem, 2.8vw, 1.5rem);
+  font-weight: 600;
+}
+
+.hero-copy h3 {
+  margin-top: 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.hero-signup {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.hero-email-input {
+  flex: 1;
+  min-height: 58px;
+  padding: 0 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  background: rgba(20, 20, 20, 0.7);
+  color: #fff;
+}
+
+.hero-email-input::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.hero-submit-button {
+  min-width: 180px;
+  min-height: 58px;
+  padding: 0 24px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+
+  .header,
+  .hero-container {
+    width: min(100% - 32px, 1200px);
+  }
+
+  .header {
+    min-height: 76px;
+    padding: 16px 0;
+  }
+
+  .hero-container {
+    padding: 32px 0 64px;
+    justify-content: center;
+  }
+
+  .hero-signup {
+    flex-direction: column;
+  }
+
+  .hero-submit-button,
+  .hero-email-input {
+    width: 100%;
+  }
+
+  .headerRightSide {
+    gap: 8px;
+  }
+
+  .languageSelect {
+    min-width: 100px;
+    font-size: 0.95rem;
+  }
+}

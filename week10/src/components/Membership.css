@@ -1,0 +1,367 @@
+.membership-section {
+    background:
+        linear-gradient(180deg, #000 0%, #050505 100%);
+    padding-bottom: 96px;
+    margin-top: -28px;
+    position: relative;
+    z-index: 2;
+}
+
+.membership-curve {
+    position: relative;
+    height: 74px;
+    margin-bottom: 8px;
+    border-top: 4px solid #c61b73;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(22, 33, 94, 0.95) 0%, rgba(5, 8, 30, 0.9) 38%, rgba(0, 0, 0, 1) 74%);
+    box-shadow: inset 0 18px 32px rgba(17, 36, 122, 0.45);
+}
+
+.membership-content {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.membership-banner {
+    margin-top: 26px;
+    padding: 28px 32px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 28px;
+    background:
+        linear-gradient(90deg, rgba(53, 24, 68, 0.98) 0%, rgba(30, 30, 78, 0.98) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.3);
+}
+
+.membership-label {
+    color: #ffb3b8;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.membership-badge {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 30% 30%, #ffbb8b 0%, #f36b2b 52%, #7a1327 100%);
+    box-shadow: 0 0 22px rgba(246, 126, 54, 0.35);
+    flex-shrink: 0;
+}
+
+.membership-badge span {
+    font-size: 2.75rem;
+}
+
+.membership-banner-copy {
+    flex: 1;
+}
+
+.membership-banner h2 {
+    margin-top: 6px;
+    font-size: clamp(1.7rem, 3.2vw, 2.35rem);
+}
+
+.membership-description {
+    margin-top: 6px;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.membership-banner button {
+    flex-shrink: 0;
+    min-width: 164px;
+    padding: 16px 22px;
+    border-radius: 5px;
+    background: rgba(135, 140, 173, 0.38);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.membership-banner button:hover {
+    background: rgba(135, 140, 173, 0.52);
+}
+
+.content-section {
+    margin-top: 72px;
+}
+
+.section-heading {
+    margin-bottom: 24px;
+}
+
+.section-heading h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+}
+
+.section-heading p {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.68);
+    line-height: 1.6;
+}
+
+.trending-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: visible;
+    padding: 16px 0 16px 36px;
+}
+
+.trending-card {
+    position: relative;
+    flex: 0 0 auto;
+    width: auto;
+    padding-left: 36px;
+    overflow: visible;
+}
+
+.trending-rank {
+    position: absolute;
+    left: 10px;
+    bottom: 2px;
+    z-index: 2;
+    font-size: 5.5rem;
+    font-width: 900;
+    line-height: 1;
+    font-weight: 900;
+    color: #111;
+    -webkit-text-stroke: 2px #fff;
+}
+
+.trending-poster {
+    width: 100%;
+    height: 230px;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+}
+
+.trending-poster span {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.trending-poster-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.trending-poster-fallback {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    min-height: 260px;
+    padding: 28px;
+    background:
+        linear-gradient(180deg, rgba(41, 18, 66, 0.85), rgba(12, 12, 28, 0.95)),
+        #171725;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.feature-card-copy h3 {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+}
+
+.feature-card-copy p {
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.65;
+}
+
+.feature-card-icon {
+    align-self: flex-end;
+    font-size: 2.5rem;
+}
+
+.faq-list {
+    display: grid;
+    gap: 10px;
+}
+
+.faq-item {
+    overflow: hidden;
+    background: #2b2b2b;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 24px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2b2b2b;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    background: #3a3a3a;
+}
+
+.faq-question span:first-child {
+    font-size: 1.25rem;
+}
+
+.faq-icon {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.faq-answer {
+    padding: 0 28px 24px;
+}
+
+.faq-answer p {
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.7;
+}
+
+.footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 72px 0 96px;
+}
+
+.footer-inner {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.footer-cta {
+    text-align: center;
+}
+
+.footer-cta p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-form {
+    margin: 20px auto 0;
+    max-width: 720px;
+    display: flex;
+    gap: 12px;
+}
+
+.footer-form input {
+    flex: 1;
+    min-height: 56px;
+    padding: 0 20px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+}
+
+.footer-form button {
+    min-width: 180px;
+    min-height: 56px;
+    padding: 0 22px;
+    border-radius: 5px;
+    background: #e50914;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footer-meta {
+    margin-top: 56px;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.footer-meta a {
+    text-decoration: underline;
+}
+
+.footer-links {
+    margin: 32px 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.footer-links li {
+    color: rgba(255, 255, 255, 0.72);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-country {
+    margin: 24px 0 18px;
+}
+
+.footer-detail {
+    max-width: 780px;
+    font-size: 0.93rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+
+    .membership-content,
+    .footer-inner {
+        width: min(100% - 32px, 1200px);
+    }
+
+    .membership-banner,
+    .footer-form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .membership-banner button,
+    .footer-form button {
+        width: 100%;
+    }
+
+    .membership-badge {
+        width: 72px;
+        height: 72px;
+    }
+
+    .trending-card {
+        min-height: 220px;
+    }
+
+    .trending-poster {
+        min-height: 220px;
+    }
+
+    .faq-question {
+        padding: 20px;
+    }
+
+    .faq-answer {
+        padding: 0 20px 20px;
+    }
+}
