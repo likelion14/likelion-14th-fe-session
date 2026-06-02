@@ -1,0 +1,235 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.background {
+  height: fit-content;
+  background-color: #121212;
+  padding-bottom: 160px;
+  overflow: hidden;
+}
+
+.nav_box {
+  display: flex;
+  height: 74px;
+  background-color: #121212;
+  color: white;
+}
+
+.navbar-container {
+  height: 74px;
+  width: 100%;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+
+.navbar-content {
+  display: flex;
+  height: 74px;
+}
+
+.wavveLogo_button {
+  width: 112px;
+  height: 74px;
+  margin: 0 78px 0 0;
+  background-color: transparent;
+  border-style: none;
+}
+
+.w-menu-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: auto;
+}
+
+.w-menu-item {
+  display: flex;
+  height: 74px;
+  padding: 0 10px;
+  align-items: center;
+  color: #A5A5A5;
+}
+
+.w-menu-item :link {
+  text-decoration: none;
+  color: #A5A5A5;
+}
+.w-menu-item :visited {
+  text-decoration: none;
+  color: #A5A5A5;
+}
+
+.search-button {
+  object-fit: cover;
+  background-color: transparent;
+  border-style: none;
+  padding: 0;
+  margin-right: 16px;
+}
+
+.user-button {
+  object-fit: cover;
+  background-color: transparent;
+  border-style: none;
+  padding: 0;
+}
+
+.swiper-container {
+  overflow: visible;
+  object-fit: cover;
+  height: 522px;
+  padding: 0 100px;
+}
+
+.swiper-wrapper {
+  height: 522px;
+}
+
+.w-full {
+  overflow: visible;
+  border-style: none;
+  border-radius: 12px;
+  height: 522px;
+}
+
+.w-full .swiper-pagination {
+  bottom: 12px !important;
+  right: 16px !important;
+  left: auto !important;
+  width: auto !important;
+          
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+        
+.w-full .swiper-pagination-current {
+ color: #fff;
+}
+
+.w-full .swiper-button-next,
+.w-full .swiper-button-prev {
+  height: 32px;
+  width: 32px;
+  color: grey;
+}
+
+.w-full .swiper-button-next:hover,
+.w-full .swiper-button-prev:hover {
+  height: 32px;
+  width: 32px;
+  color: white;
+}
+
+.swiper-banner-img {
+  width: 100%;
+  height: 522px;
+  object-fit: cover;
+}
+
+.multi-banner {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.multi-banner-img {
+  width: 1240px;
+  height: 96px;
+  object-fit: cover;
+}
+
+.section-title {
+  color: white;
+  font-size: 24px;
+  padding: 8px 0;
+}
+
+.section-swiper-container {
+  height: 440px;
+  padding: 0 100px;
+}
+
+.movie-card {
+  overflow: hidden;
+  height: 360px;
+  width: 240px;
+  border-style: none;
+  border-radius: 12px;
+}
+
+.swiper-section-img {
+  height: 360px;
+  width: 240px;
+  object-fit: cover;
+}
+
+.swiper-section-img:hover {
+  -webkit-transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
+.section-swiper {
+  overflow: visible;
+  object-fit: cover;
+  height: 360px;
+  width: 1460px;
+}
+
+.swiper-section-wrapper {
+  height: 360px;
+}
+
+.section-swiper .swiper-button-next,
+.section-swiper .swiper-button-prev {
+  height: 20px;
+  width: 20px;
+  color: grey;
+  background-color: rgba(0, 0, 0, 0.30);
+  padding: 12px 4px;
+}
+
+.section-swiper .swiper-button-next:hover,
+.section-swiper .swiper-button-prev:hover {
+  height: 20px;
+  width: 20px;
+  color: white;
+}
